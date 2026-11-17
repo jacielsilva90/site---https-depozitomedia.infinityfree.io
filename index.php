@@ -9,6 +9,15 @@ require_once 'config.php';
     <title>site</title>
     <link rel="stylesheet" href="style2.css">
 	<link rel="icon" href="favicon.ico">
+	<style>
+	#red_soc{display:grid; grid-template-columns:1fr 1fr 1fr;}
+	@media(max-width:770px){
+		#red_soc{display:grid; grid-template-columns:1fr 1fr;}
+		#red_soc section{font-size:90%; overflow:hidden;}
+		#red_soc section img{max-width:50%;height:auto;}
+	}
+
+	</style>
 </head>
 <body style="" >
     <header>
@@ -61,22 +70,20 @@ require_once 'config.php';
 					</div>
 				</div>
 			</div>
-			<div><br/>   
-				<h3 > > Redes Sociais:</h3>
-				<p >
-				<img src="imageinsta.png">
-				<a href="https://www.instagram.com/jacismith90/"> > @jacismith90</a>
-				<img src="imageinsta.png">
-				<a href="https://www.instagram.com/jaciel.silva.18/"> > @jaciel.silva.18</a>
+			<h3 > > Redes Sociais:</h3>
+			<div id='red_soc'>
+				<section>
+				 <img src='imageinsta.png' /><br/>
+				 <a href="https://www.instagram.com/jacismith90/" target="_blank"> > @jacismith90</a><br/>							
+				 <a href="https://www.instagram.com/jaciel.silva.18/" target="_blank"> > @jaciel.silva.18</a><br/>
+				</section>
+				<section>
+				 <img src='imageface.png' /><br/>
+				 <a href="https://www.facebook.com/jacielap.silvajaci?locale=pt_BR" target="_blank"> > Jaci AP Silva</a><br/>
+				 <a href="https://www.facebook.com/Jacielsilvasmith?locale=pt_BR" target="_blank"> > Jaciel Silva Smith</a><br/>
+				</section>
 				
-				<img src="imageface.png">
-				<a href="https://www.facebook.com/jacielap.silvajaci?locale=pt_BR"> > Jaci AP Silva</a>
-				<img src="imageface.png">
-				<a href="https://www.facebook.com/Jacielsilvasmith?locale=pt_BR"> > Jaciel Silva Smith</a>
-				<br/>
-				<img src="imagemail.png">
-				<a href="https://mail.google.com/mail/u/0/#inbox"> > jaciel.silva.18@gmail.com</a>
-				</p>
+				<a href="https://mail.google.com/mail/u/0/#inbox"><img src='imagemail.png' /> > mail.com</a>
 			</div>
 		
         </main>
